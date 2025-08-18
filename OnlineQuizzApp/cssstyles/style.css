@@ -1,0 +1,82 @@
+/* Make the body a flex container */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #ffe5d9; /* soft peach background */
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* full height of viewport */
+}
+
+/* Main content grows */
+.quiz-container {
+  padding: 20px;
+  max-width: 500px;
+  margin: 0 auto;
+  flex: 1; /* takes remaining space */
+}
+
+/* Header styling */
+header {
+  background: #d2765a; /* lavender/blue header */
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+/* Quiz question buttons */
+button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #ff7043; /* coral button */
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background: #f4511e; /* darker coral on hover */
+  transform: translateY(-2px); /* subtle lift effect */
+}
+
+.hidden {
+  display: none;
+}
+
+#answers button {
+  text-align: left;
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #fff3e0; /* very light peach */
+  color: #333;
+  font-size: 14px;
+}
+
+/* Responsive adjustments for mobile */
+@media screen and (max-width: 600px) {
+  .quiz-container {
+    padding: 10px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  footer {
+    font-size: 12px;
+  }
+}

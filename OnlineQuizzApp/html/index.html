@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile Quiz App</title>
+  <link rel="stylesheet" href="/OnlineQuizzApp/cssstyles/style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Welcome human to Brain Rot cleanser</h1>
+    <p>It is time to Test your knowledge!</p>
+  </header>
+
+  <main class="quiz-container">
+    <section id="category-selection">
+      <h2>Select a category:</h2>
+      <button onclick="startQuiz('Geography')">Geography</button>
+      <button onclick="startQuiz('Oceanography')">Oceanography</button>
+      <button onclick="startQuiz('Astronomy')">Astronomy</button>
+      <button onclick="startQuiz('Technology')">Technology</button>
+      <button onclick="startQuiz('Cinema')">Cinema</button>
+      <button onclick="startQuiz('Food')">Food</button>
+      <button onclick="startQuiz('BasicMaths')">Basic Maths</button>
+      <button onclick="startQuiz('Chemistry')">Chemistry</button>
+    </section>
+
+    <section id="quiz-section" class="hidden">
+      <div id="question-container">
+        <h2 id="question"></h2>
+        <div id="answers"></div>
+      </div>
+      <button id="next-btn" onclick="nextQuestion()">Next</button>
+    </section>
+
+    <section id="result-section" class="hidden">
+      <h2>Quiz Completed!</h2>
+      <p id="score"></p>
+      <button onclick="restartQuiz()">Restart Quiz</button>
+    </section>
+  </main>
+<footer>
+  <p><b>All rights reserved for Aravind Santha , Contact: sant0281@algonquinlive.com, to use for commercial</b></p>
+</footer>
+  <script src="/OnlineQuizzApp/javascript/script.js"></script>
+</body>
+
+</html>

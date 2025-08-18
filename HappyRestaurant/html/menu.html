@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Restaurant Ordering System</title>
+    <link rel="stylesheet" href="/HappyRestaurant/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <h1>🍔 Miss Tammy Restaurant</h1>
+        <p>Welcome everyone! Please place your order below.</p>
+    </header>
+
+    <main class="container">
+        <!-- Menu Section -->
+        <section class="menu">
+            <h2>Menu</h2>
+            <div class="menu-items">
+                <!-- Example menu items -->
+                <div class="item">
+                    <img src="/HappyRestaurant/images/cheeseburger.jpg" alt="CheeseBurger">
+                    <h3>Cheese Burger</h3>
+                    <p>$5.00</p>
+                    <button onclick="addToCart('Cheese Burger', 5)">Add to Cart</button>
+                </div>
+                <div class="item">
+                    <img src="/HappyRestaurant/images/fries.jpeg" alt="fries">
+                    <h3>Fries</h3>
+                    <p>$2.50</p>
+                    <button onclick="addToCart('Fries', 2.5)">Add to Cart</button>
+                </div>
+                <div class="item">
+                    <img src="/HappyRestaurant/images/cokacola.jpg" alt="coke">
+                    <h3>Drink(medium)</h3>
+                    <p>$1.50</p>
+                    <button onclick="addToCart('Drink', 1.5)">Add to Cart</button>
+                </div>
+                <div class="item">
+                    <img src="/HappyRestaurant/images/chickennuggets.jpg" alt="chickennuggets">
+                    <h3>Chicken Nuggets(10pcs)</h3>
+                    <p>$4.00</p>
+                    <button onclick="addToCart('Chicken Nuggets', 4)">Add to Cart</button>
+                </div>
+                <div class="item">
+                    <img src="/HappyRestaurant/images/chikenTenders.jpg" alt="chickentenders">
+                    <h3>Chicken Tenders(4pcs)</h3>
+                    <p>$4.00</p>
+                    <button onclick="addToCart('Chicken Tenders', 4)">Add to Cart</button>
+                </div>
+                <div class="item">
+                    <img src="/HappyRestaurant/images/blueCheesedip.jpeg" alt="blueCheesedip">
+                    <h3>BlueCheese Dip</h3>
+                    <p>$0.50</p>
+                    <button onclick="addToCart('BlueCheese Dip', 0.50)">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Order Section -->
+        <section class="order">
+            <h2>Your Order</h2>
+            <ul id="cart"></ul>
+            <p id="total">Total: $0.00</p>
+            <div class="order-buttons">
+                <button onclick="clearCart()">Clear Order</button>
+                <button onclick="placeOrder()">placeOrder</button>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="/HappyRestaurant/javascript/script.js"></script>
+</body>
+
+</html>

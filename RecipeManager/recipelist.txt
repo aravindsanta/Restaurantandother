@@ -1,0 +1,27 @@
+Recipe Pasta
+flour 200
+sugar 50
+eggs 1
+yeast 0
+butter 20
+
+Recipe Cake
+flour 300
+sugar 200
+eggs 3
+yeast 0
+butter 100
+
+Recipe Cake
+flour 300
+sugar 200
+eggs 3
+yeast 0
+butter 100
+
+Recipe Cake
+flour 300
+sugar 200
+eggs 3
+yeast 0
+butter 100
