@@ -1,0 +1,160 @@
+
+/*Name: Aravind Santha
+File Name: Assignment 1, css file
+Date Created: Feb 05, 2025*
+Description: This is a css file that adds the styling to the protfolio webpage*//* General Styles */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #c1cbd4;
+}
+
+header, nav, section, footer {
+    padding: 20px;
+}
+@media (max-width: 768px){
+    .contact-form {
+        padding: 1em;
+        max-width: 90%;
+    }
+}
+/*This will take care of the distance between the email and phone*/
+.contact-info, .contact-info2 {
+    display: flex;
+    gap: 20px;
+}
+.contact-info {
+    margin-right: 20px;
+    display: inline-block;
+}
+.separator {
+    margin: 0 325px;
+}
+ .separator2 {
+    margin: 0 280px;
+}
+
+.separator3,.separator4, .separator5, .separator6, .separator7,.separator8 {
+    display: flex;  
+    justify-content: flex-start; 
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightcoral;
+    padding: 1em;
+    color: white;
+}
+
+nav .logo {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: white;
+}
+
+nav .links {
+    list-style-type: none;
+    display: flex;
+}
+
+nav .links li {
+    margin: 0 10px;
+}
+
+nav .links a {
+    color: white;
+ text-decoration: none;
+}
+
+main {
+    padding: 2em;
+
+}
+.column {
+    flex: 1 1 30%;
+    margin: 1em;
+    padding: 1em;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(26, 6, 6, 0.1);
+    background-color: white;
+}
+
+nav .btn {
+    background-color: #ff8800;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+}
+/*This will increase the siz of text area in contact form*/
+input[type="text"], input[type="email"], input[type="tel"] {
+    width: 35%;
+}
+/*This will increase the size of the text area*/
+textarea {
+    width: 40%;
+    padding: 10px;
+    font-size: 1.2em;
+}
+
+#Home {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: rgb(220, 227, 231);
+}
+
+#Home img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.Project-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Project {
+    display: none;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.Project.active {
+    display: block;
+}
+
+.Project img {
+    width: 200px;
+    border: 2px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.Project img:hover {
+    transform: scale(1.2);
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: lightseagreen;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
